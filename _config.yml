@@ -1,10 +1,18 @@
 title: Thomas Cornett # your name (or website title) here
 logo: "/images/profile_image?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
-  <br><br>
-  Second description 
-  <br><br>
+  Languages known and worked with
+  <br>Python: 3 years<br>
+  <br>Java: 2 years<br>
+  <br>HTML & CSS: 1 year<br>
+  Data Science 
+  <br>Exploritory Data Analysis<br>
+  <br>Machine Learning<br>
+  
+  Software Development 
+  <br>Python Kivy: 1 year<br>
+  
+  
   <a href="https://www.linkedin.com/in/thomas-cornett-ab494ab4/">View My LinkedIn Profile</a> 
   
 theme: jekyll-theme-minimal
