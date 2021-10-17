@@ -36,7 +36,7 @@
 
 [Market Basket Analysis](https://github.com/Corneth/Instacart-Marketbasket-Analysis)
 <p> Working with the Instacart dataset, I built a recommendation system centered around giving recommendations for the user from over 100K previous orders from other customers. Created a grocery list maker to allow the implemented food database from the FDC to allow stores to find other products that users would like more from that database.</p>
-<img src=https://www.softwebsolutions.com/wp-content/uploads/2018/08/market-basket-analysis-retail.jpg"/>
+<img src="https://www.softwebsolutions.com/wp-content/uploads/2018/08/market-basket-analysis-retail.jpg"/>
 
 ---
 
