@@ -20,7 +20,7 @@
 
 [King County Housing Regression](https://github.com/Corneth/King_County_Housing_Regression)
 
-<img src="https://github.com/Corneth/King_County_Housing_Regression/blob/main/Images/Skyline.jpg"/>
+<img src="https://miro.medium.com/max/1200/1*N_8tfsb6pOJb71N8Mi5yvQ.png"/>
 
 [Chicago Car Crash Classification](https://github.com/Corneth/Chicago_Car_Crash_Classification)
 <p> Utilizing the open data from </p>
@@ -34,9 +34,9 @@
   <p> Working with the MovieLenz dataset built a machine learning recommendation system for what movies you should watch based on listed movies from specific genres or overall movie dataset. </p>
 <img src="https://movielens.org/images/site/main-screen.png"/>
 
-[Market Basket Analysis] (https://github.com/Corneth/Instacart-Marketbasket-Analysis)
+[Market Basket Analysis](https://github.com/Corneth/Instacart-Marketbasket-Analysis)
 <p> Working with the Instacart dataset, I built a recommendation system centered around giving recommendations for the user from over 100K previous orders from other customers. Created a grocery list maker to allow the implemented food database from the FDC to allow stores to find other products that users would like more from that database.</p>
-<img src="https://github.com/Corneth/Instacart-Marketbasket-Analysis/blob/main/Capstone_top_photo.jpeg"/>
+<img src=https://www.softwebsolutions.com/wp-content/uploads/2018/08/market-basket-analysis-retail.jpg"/>
 
 ---
 
