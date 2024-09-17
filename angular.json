@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"JayantGoel001": {
+		"Corneth": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:application": {
@@ -17,27 +17,22 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "build",
+						"outputPath": "docs",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
 						"tsConfig": "tsconfig.app.json",
 						"assets": [
-							"src/favicon.ico",
+							"src/app",
 							"src/assets/css",
 							"src/assets/fonts",
 							"src/assets/images",
 							"src/assets/js",
 							"src/assets/data.min.js",
-							"src/apple-touch-icon.png",
 							"src/browserconfig.xml",
-							"src/favicon-16x16.png",
-							"src/favicon-32x32.png",
 							"src/LICENSE",
 							"src/manifest.webmanifest",
 							"src/robots.txt",
-							"src/sitemap_index.xml",
-							"src/README.md",
 							"src/screenshots"
 						],
 						"styles": [
@@ -91,10 +86,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "JayantGoel001:build:production"
+							"browserTarget": "Corneth:build:production"
 						},
 						"development": {
-							"browserTarget": "JayantGoel001:build:development"
+							"browserTarget": "Corneth:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
@@ -102,7 +97,7 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"browserTarget": "JayantGoel001:build"
+						"browserTarget": "Corneth:build"
 					}
 				},
 				"test": {
