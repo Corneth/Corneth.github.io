@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://Corneth.github.io/sitemap_index.xml
