@@ -19,9 +19,9 @@
 			<ul class="nav-tabs nav-fill" id="portfolioTabs">
 				<li id="portfolio-selector"></li>
 				<li *ngFor="let tab of tabs['NavTabs']" class="nav-item" (click)="changePortfolioTab(tab['id'])">
-					<ng-template #title>
-						<strong><em>{{ tab['name'] }}</em></strong>
-					</ng-template>
+<!--					<ng-template #title>-->
+<!--						<strong><em>{{ tab['name'] }}</em></strong>-->
+<!--					</ng-template>-->
 					<a href="/" rel="noreferrer" class="nav-link" [ngClass]="{'active': activePortfolioTab === tab['id']}" id="{{tab['id']}}-tab" >
 						{{tab["name"]}}
 

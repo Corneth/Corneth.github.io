@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1726632991865,
+  "timestamp": 1726668888820,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/379.8d8500281a0dfd50.js",
+        "/379.a9baeefe202dde46.js",
         "/705.04c0163cd44a3048.js",
         "/index.html",
         "/main.1ffe8c2bf2275c52.js",
         "/polyfills.40ddcd3c9a182206.js",
-        "/runtime.89d4ec096c61fab1.js",
+        "/runtime.d4cca42f949c3c16.js",
         "/scripts.e8a7a2c6efd642e1.js",
         "/styles.61b0674320f41b27.css"
       ],
@@ -125,7 +125,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/379.8d8500281a0dfd50.js": "3bc03a8b3879a4898a5c2d0b2422f7cf637b4e6c",
+    "/379.a9baeefe202dde46.js": "bd30e2dfc8134cd7556244747e8dc8fd81da50c4",
     "/404.4ed6dad8c73a710d.webp": "c55234174be110511c6fdf693770c8dde7f046c1",
     "/705.04c0163cd44a3048.js": "835578c3ea0a43e54696a752b8b23838dbd2ddfd",
     "/about-bg.7c80c2136d4a089d.svg": "2f4e718723ee93de8349ca37808a09b0d5bbce6c",
@@ -215,11 +215,11 @@
     "/fa-solid-900.45add571878710a9.ttf": "5f4adfe2eb7b4e22cb6323d7560e56ae26f483ba",
     "/fa-solid-900.7cd3ea3a010ee096.svg": "c8e3b7e2aa628e46993e63bf9c806e7c27800149",
     "/fa-solid-900.d80d93face7fbbc1.eot": "26f695865311891d8fa1f6321605306c74b5d44c",
-    "/index.html": "e41b9d536b98a74d2aef2c9f43e5ce01c6174357",
+    "/index.html": "0c2da393c29e815daf0ca75629f4ba4b0eed6619",
     "/main.1ffe8c2bf2275c52.js": "517251b40eecd0743786873412941ae26532aeb2",
     "/polyfills.40ddcd3c9a182206.js": "8104e891faa55b79c11083c91f7c68aa917504b8",
     "/quote-img.5e642c8eee792695.webp": "27936458251d3dbc6d1eecfc1e501ab93a3838bb",
-    "/runtime.89d4ec096c61fab1.js": "940138d14b612957687f612fe5197ea44f2fc795",
+    "/runtime.d4cca42f949c3c16.js": "65a57785997870b0e9c89c925bc41dbb772b0d60",
     "/scripts.e8a7a2c6efd642e1.js": "03d7d82695322064c3d96ee2f10091890b4564e3",
     "/styles.61b0674320f41b27.css": "a8112361291e8a53e8493502f3dcbe8841480cc4"
   },
