@@ -1,0 +1,107 @@
+<section class="section" id="portfolio">
+	<div class="container">
+		<div class="row justify-content-center txt-bg txt-bg-portfolio">
+			<div class="col-lg-6 pointer">
+				<div class="wow fadeIn section-title text-center mb-4 pb-2">
+					<div class="mb-5 pb-3">
+						<i class="far fa-clone h1 text-muted"></i>
+					</div>
+					<h2 class="h3 font-weight-bold">Portfolio</h2>
+					<p class="text-muted mx-auto mb-0 mt-4 para-desc">
+						Explore my work across different domains like Data Science, App Development, and Web Development.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation Tabs for Portfolio Categories -->
+		<div class="col-lg-12 mt-4 pt-2">
+			<ul class="nav-tabs nav-fill" id="portfolioTabs">
+				<li id="portfolio-selector"></li>
+				<li *ngFor="let tab of tabs['NavTabs']" class="nav-item" (click)="changePortfolioTab(tab['id'])">
+<!--					<ng-template #title>-->
+<!--						<strong><em>{{ tab['name'] }}</em></strong>-->
+<!--					</ng-template>-->
+					<a href="/" rel="noreferrer" class="nav-link" [ngClass]="{'active': activePortfolioTab === tab['id']}" id="{{tab['id']}}-tab" >
+						{{tab["name"]}}
+
+					</a>
+				</li>
+			</ul>
+		</div>
+			<!-- Content for Each Category -->
+			<div class="tab-content container-grid mt-4 pt-2" id="portfolioTabContent">
+
+				<!-- Data Science Category -->
+				<div class="tab-pane fade" [ngClass]="{'active show': activePortfolioTab === 'data-science'}" id="data-science" >
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let project of tabs['dataScience']" class="wow {{project['animationClass']}} col-lg-4 spacing" [attr.data-wow-delay]="[project['delay']]">
+							<!-- Data Science Project Template -->
+							<a class="item-box m-2" href="https://github.com/Corneth/{{project['project']}}" target="_blank">
+								<img class="item-container img-fluid mx-auto" src="assets/images/portfolio/{{project['project']}}.webp" alt="{{ replaceDashesWithSpaces(project['project']) }}">
+								<div class="item-mask">
+									<div class="item-caption text-white text-center">
+										<h3 class="portfolio-title">{{ replaceDashesWithSpaces(project['project']) }}</h3>
+										<p class="portfolio-description">{{project['description']}}</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- App Development Category -->
+				<div class="tab-pane fade" [ngClass]="{'active show': activePortfolioTab === 'app-dev'}" id="app-dev" aria-labelledby="app-dev-tab">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let project1 of tabs['appDevProjects']" class="wow {{project1['animationClass']}} col-lg-4 spacing" [attr.data-wow-delay]="[project1['delay']]">
+							<!-- App Development Project Template -->
+							<a class="item-box m-2" href="https://github.com/Corneth/{{project1['project']}}" target="_blank">
+								<img class="item-container img-fluid mx-auto" src="assets/images/portfolio/{{project1['project']}}.webp" alt="{{ replaceDashesWithSpaces(project1['project']) }}">
+								<div class="item-mask">
+									<div class="item-caption text-white text-center">
+										<h3 class="portfolio-title">{{ replaceDashesWithSpaces(project1['project']) }}</h3>
+										<p class="portfolio-description">{{project1['description']}}</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Game Development Category -->
+				<div class="tab-pane fade" [ngClass]="{'active show': activePortfolioTab === 'game-dev'}" id="web-dev" aria-labelledby="web-dev-tab">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let project2 of tabs['gameDevProjects']" class="wow {{project2['animationClass']}} col-lg-4 spacing" [attr.data-wow-delay]="[project2['delay']]">
+							<!-- Web Development Project Template -->
+							<a class="item-box m-2" href="https://github.com/Corneth/{{project2['project']}}" target="_blank">
+								<img class="item-container img-fluid mx-auto" src="assets/images/portfolio/{{project2['project']}}.webp" alt="{{ replaceDashesWithSpaces(project2['project']) }}">
+								<div class="item-mask">
+									<div class="item-caption text-white text-center">
+										<h3 class="portfolio-title">{{ replaceDashesWithSpaces(project2['project']) }}</h3>
+										<p class="portfolio-description">{{project2['description']}}</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- General Development Category -->
+				<div class="tab-pane fade" [ngClass]="{'active show': activePortfolioTab === 'gen-dev'}" id="gen-dev" aria-labelledby="gen-dev-tab">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let project3 of tabs['generalProgramming']" class="wow {{project3['animationClass']}} col-lg-4 spacing" [attr.data-wow-delay]="[project3['delay']]">
+							<!-- Web Development Project Template -->
+							<a class="item-box m-2" href="https://github.com/Corneth/{{project3['project']}}" target="_blank">
+								<img class="item-container img-fluid mx-auto" src="assets/images/portfolio/{{project3['project']}}.webp" alt="{{ replaceDashesWithSpaces(project3['project']) }}">
+								<div class="item-mask">
+									<div class="item-caption text-white text-center">
+										<h3 class="portfolio-title">{{ replaceDashesWithSpaces(project3['project']) }}</h3>
+										<p class="portfolio-description">{{project3['description']}}</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
