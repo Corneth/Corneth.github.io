@@ -1,18 +1,21 @@
 <section class="quote-section">
-	<div class=overlay>
-
-	</div>
-	<div class=container>
+	<video autoplay muted loop playsinline class="background-video">
+		<source [src]="'assets/images/quote-img.mp4'" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	<div class="overlay"></div>
+	<div class="container">
 		<div class="row justify-content-center">
 			<blockquote class="col-md-7 text-center fadeInUp">
-				<h3 class="wow slideInLeft h2 mb-5" data-wow-duration=0.25s data-wow-delay=0.1s>
-					“{{quoteData['quote']}}”</h3>
-				<h4 class="wow slideInRight h2" data-wow-duration=0.25s data-wow-delay=0.1s>
+				<h3 class="wow slideInLeft h2 mb-5" data-wow-duration="0.25s" data-wow-delay="0.1s">
+					“{{quoteData['quote']}}”
+				</h3>
+				<h4 class="wow slideInRight h2" data-wow-duration="0.25s" data-wow-delay="0.1s">
 					<cite title="{{quoteData['author']}}">
-						- {{quoteData['author']}}</cite>
+						- {{quoteData['author']}}
+					</cite>
 				</h4>
 			</blockquote>
 		</div>
 	</div>
 </section>
-

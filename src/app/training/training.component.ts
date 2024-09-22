@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
-
+import {CommonModule} from '@angular/common';
 declare var data : any;
 
 @Component({
