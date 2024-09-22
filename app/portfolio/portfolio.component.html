@@ -33,7 +33,7 @@
 			<div class="tab-content container-grid mt-4 pt-2" id="portfolioTabContent">
 
 				<!-- Data Science Category -->
-				<div class="tab-pane fade" [ngClass]="{'active show': activePortfolioTab === 'data-science'}" id="data-science" aria-labelledby="data-science-tab">
+				<div class="tab-pane fade" [ngClass]="{'active show': activePortfolioTab === 'data-science'}" id="data-science" >
 					<div class="row">
 						<div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let project of tabs['dataScience']" class="wow {{project['animationClass']}} col-lg-4 spacing" [attr.data-wow-delay]="[project['delay']]">
 							<!-- Data Science Project Template -->
