@@ -1,0 +1,219 @@
+
+/* Global Styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom CSS Utilities */
+@layer utilities {
+    .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .bg-gradient-radial {
+        background: radial-gradient(var(--tw-gradient-stops));
+    }
+}
+
+/* Animation Keyframes */
+@keyframes scan-line {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes glitch {
+    0%, 100% {
+        filter: hue-rotate(0deg) saturate(100%);
+        transform: translate(0);
+    }
+    20% {
+        filter: hue-rotate(180deg) saturate(200%);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        filter: hue-rotate(90deg) saturate(150%);
+        transform: translate(2px, -2px);
+    }
+    60% {
+        filter: hue-rotate(270deg) saturate(120%);
+        transform: translate(-1px, -1px);
+    }
+    80% {
+        filter: hue-rotate(45deg) saturate(180%);
+        transform: translate(1px, 1px);
+    }
+}
+
+@keyframes matrix-fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(1000px);
+    }
+}
+
+/* Custom Animation Classes */
+.animate-scan-line {
+    animation: scan-line 3s linear infinite;
+}
+
+.animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+}
+
+.animate-glitch {
+    animation: glitch 0.3s ease-in-out;
+}
+
+.animate-matrix-fall {
+    animation: matrix-fall 10s linear infinite;
+}
+
+/* Scrollbar Styling */
+.overflow-y-auto::-webkit-scrollbar {
+    width: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 255, 0.5);
+    border-radius: 2px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 255, 0.8);
+}
+
+/* Terminal Cursor Animation */
+.terminal-cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Glow Effects */
+.glow-green {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+.glow-blue {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.glow-purple {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.glow-cyan {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+/* Hover Transforms */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+}
+
+/* Text Effects */
+.text-glow {
+    text-shadow: 0 0 10px currentColor;
+}
+
+/* Background Patterns */
+.bg-circuit {
+    background-image:
+            radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+    background-size: 20px 20px;
+}
+
+.bg-matrix {
+    background:
+            linear-gradient(90deg, transparent 24%, rgba(0, 255, 0, 0.03) 25%, rgba(0, 255, 0, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 255, 0, 0.03) 75%, rgba(0, 255, 0, 0.03) 76%, transparent 77%, transparent),
+            linear-gradient(transparent 24%, rgba(0, 255, 0, 0.03) 25%, rgba(0, 255, 0, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 255, 0, 0.03) 75%, rgba(0, 255, 0, 0.03) 76%, transparent 77%, transparent);
+    background-size: 20px 20px;
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 2px solid rgba(0, 255, 255, 0.1);
+    border-radius: 50%;
+    border-top: 2px solid #00ffff;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+    .text-responsive {
+        font-size: clamp(1rem, 4vw, 2rem);
+    }
+}
+
+/* Focus States */
+.focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900;
+}
+
+.focus-green {
+    @apply focus-ring focus:ring-green-500;
+}
+
+.focus-blue {
+    @apply focus-ring focus:ring-blue-500;
+}
+
+.focus-purple {
+    @apply focus-ring focus:ring-purple-500;
+}
+
+.focus-cyan {
+    @apply focus-ring focus:ring-cyan-500;
+}
+
+/* Dark Mode Optimizations */
+@media (prefers-color-scheme: dark) {
+    .bg-adaptive {
+        background-color: #000;
+    }
+
+    .text-adaptive {
+        color: #fff;
+    }
+}
