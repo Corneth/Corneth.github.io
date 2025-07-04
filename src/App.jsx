@@ -45,7 +45,7 @@ function App() {
                     <Route path="/ai" element={<AILabPage />} />
                     <Route path="/mobile" element={<MobilePage />} />
                     <Route path="/blog" element={<BlogPage />} />
-                    <Route path="/about" element={<AboutPage />} />
+                    {/*<Route path="/about" element={<AboutPage />} />*/}
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/projects" element={<ProjectsPage />} />
                 </Routes>
