@@ -3,9 +3,9 @@ name: Deploy React App to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Version-2 ]
   pull_request:
-    branches: [ main ]
+    branches: [ Version-2 ]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
