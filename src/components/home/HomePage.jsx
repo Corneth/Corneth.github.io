@@ -91,13 +91,13 @@ export default function HomePage() {
                             <Mail size={18} />
                             Contact Me
                         </Link>
-                        <Link
-                            to="/about"
-                            className="px-8 py-3 bg-green-600 border border-green-600 hover:bg-green-900/30 rounded-md transition-all duration-300 flex items-center gap-2"
-                        >
-                            <FileText size={18} />
-                            About Me
-                        </Link>
+                        {/*<Link*/}
+                        {/*    to="/about"*/}
+                        {/*    className="px-8 py-3 bg-green-600 border border-green-600 hover:bg-green-900/30 rounded-md transition-all duration-300 flex items-center gap-2"*/}
+                        {/*>*/}
+                        {/*    <FileText size={18} />*/}
+                        {/*    About Me*/}
+                        {/*</Link>*/}
                     </div>
 
                     {/* Quick Access Navigation */}
