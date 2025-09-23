@@ -19,6 +19,7 @@ function App() {
     return (
         <Router>
             <div className="App">
+
                 {/*/!* Global Terminal Overlay *!/*/}
                 {/*{showTerminal && (*/}
                 {/*    <Terminal*/}
