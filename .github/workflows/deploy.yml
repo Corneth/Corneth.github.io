@@ -1,5 +1,5 @@
 # .github/workflows/deploy.yml
-name: Deploy React App to GitHub Pages
+name: Deploy Angular App to GitHub Pages
 
 on:
     push:
@@ -20,10 +20,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6          # ✅ Node 24 native
 
             - name: Setup Node.js
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6        # ✅ Node 24 native
               with:
                   node-version: '24'
                   cache: 'npm'
@@ -32,15 +32,15 @@ jobs:
               run: npm ci
 
             - name: Build React app
-              run: CI=false npm run build
+              run:  npm run build
 
             - name: Setup Pages
-              uses: actions/configure-pages@v5
+              uses: actions/configure-pages@v5   # ⚠️ Still Node 20, no v6 yet
 
             - name: Upload artifact
-              uses: actions/upload-pages-artifact@v3
+              uses: actions/upload-pages-artifact@v3  # ⚠️ Still Node 20, no v4 yet
               with:
-                  path: './build'
+                  path: './dist/Corneth.github.io/browser'
 
     deploy:
         environment:
@@ -51,4 +51,4 @@ jobs:
         steps:
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v4
+              uses: actions/deploy-pages@v4      # ⚠️ Still Node 20, no v5 yet
