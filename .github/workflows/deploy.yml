@@ -37,10 +37,10 @@ jobs:
             - name: Setup Pages
                 # Updated to v6 if available, otherwise v5 is the latest stable.
                 # Check marketplace for v6 release status. If v6 isn't out, keep v5.
-              uses: actions/configure-pages@v5
+              uses: actions/configure-pages@v6
 
             - name: Upload artifact
-              uses: actions/upload-pages-artifact@v3
+              uses: actions/upload-pages-artifact@v5
 
     deploy:
         environment:
